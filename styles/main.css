@@ -1,0 +1,53 @@
+main#container-main {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+}
+
+section.container-section {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+
+section#illustration-image {
+    background-size: cover;
+    background-position: center;
+    background-color: #6c697a;
+    background-image: url(../assets/img/image_main.jpg);
+}
+
+.input, .select{
+    height: 38px;
+    width: 100%;
+    padding-inline: 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 100px;
+}
+
+.btn {
+    padding: 5px;
+    height: 38px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.btn.rounded{
+    height: 38px;
+    width: 38px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+button#help-me{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+button#help-me span{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
