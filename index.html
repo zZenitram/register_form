@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Form</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/reset.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Container principal -->
+    <main id="container-main">
+
+        <!-- Seção de cadastro -->
+        <section class="container-section" id="register">
+
+            <div id="container-text">
+                <h1>Cadastrar</h1>
+                <p>Preencha os campos abaixo para uma experiência personalizada em
+                    nossa plataforma. Seus dados são essenciais para melhor
+                    interação.</p>
+            </div>
+
+            <form id="form-register-user">
+
+                <label for="data-name">
+                    <span>Nome Completo:</span>
+                    <div class="group-input">
+                        <input type="text" class="input" id="data-name" placeholder="Ex: João da Silva">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                </label>
+
+                <label for="data-email">
+                    <span>E-mail:</span>
+                    <div class="group-input">
+                        <input type="email" class="input" id="data-email" placeholder="Ex: joao@gmail.com">
+                        <i class='bx bxs-envelope'></i>
+                    </div>
+                </label>
+
+                <label for="data-cell-phone">
+                    <span>Celular:</span>
+                    <div class="group-input">
+                        <input type="text" class="input" id="data-cell-phone" placeholder="(00) 90000-0000">
+                        <i class='bx bxs-phone'></i>
+                    </div>
+                </label>
+
+                <label for="data-gender">
+                    <span>Gênero:</span>
+                    <div class="group-input">
+                        <select class="select" id="data-gender">
+                            <option value="" selected>Selecione um opção</option>
+                            <option value="MASCULINO">Masculino</option>
+                            <option value="FEMININO">Feminino</option>
+                        </select>
+                        <i class='bx bxs-chevron-down'></i>
+                    </div>
+                </label>
+
+                <label for="data-date-of-birth">
+                    <span>Data de Nascimento:</span>
+                    <div class="group-input">
+                        <input type="date" class="input" id="data-date-of-birth">
+                        <i class='bx bxs-calendar'></i>
+                    </div>
+                </label>
+            </form>
+
+            <div id="container-condition-term">
+                
+                <label for="data-term">
+                    <input type="checkbox" id="data-term">
+                    <strong>Termos e Condições:</strong>
+                </label>
+
+                <p class="paragraph-condition-term">
+                    Ao preencher este formulário, declaro que as informações fornecidas são precisas e verdadeiras.
+                    Concordo em
+                    receber comunicações relacionadas aos serviços/produtos oferecidos pela empresa. Também concordo
+                    com os
+                    termos e condições de uso estabelecidos pela empresa.
+                </p>
+            </div>
+
+            <button class="btn" id="button-register">
+                <span>Cadastrar</span>
+            </button>
+
+        </section>
+
+        <!-- Seção de ilustração -->
+        <section class="container-section" id="illustration-image">
+
+            <!-- Botão de ajuda -->
+            <button class="btn rounded" id="help-me">
+                <span>?</span>
+            </button>
+        </section>
+    </main>
+</body>
+
+</html>
