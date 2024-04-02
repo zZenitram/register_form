@@ -19,7 +19,8 @@ section#illustration-image {
     background-image: url(../assets/img/image_main.jpg);
 }
 
-.input, .select{
+.input,
+.select {
     height: 38px;
     width: 100%;
     padding-inline: 15px;
@@ -34,20 +35,54 @@ section#illustration-image {
     border-radius: 5px;
 }
 
-.btn.rounded{
+.btn.rounded {
     height: 38px;
     width: 38px;
     aspect-ratio: 1/1;
     border-radius: 50%;
 }
 
-button#help-me{
+button#help-me {
     position: absolute;
     right: 15px;
     bottom: 15px;
 }
 
-button#help-me span{
+button#help-me span {
     font-size: 1.3rem;
     font-weight: 500;
+}
+
+/* Estilos específicos para dispositivos pequenos (como smartphones) */
+@media only screen and (max-width: 446px) {
+    section#register {
+        padding: 25px !important;
+    }
+}
+
+/* Estilos específicos para dispositivos pequenos (como smartphones) */
+@media only screen and (max-width: 993px) {
+    main {
+        grid-template-columns: 1fr !important;
+    }
+
+    section#illustration-image {
+        display: none !important;
+    }
+}
+
+/* Estilos específicos para dispositivos extra grandes (como desktops grandes ou telas de TV) */
+@media only screen and (min-width: 1201px) {
+    body {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+    }
+
+    main {
+        width: 1400px !important;
+        background-color: #fff;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
 }
