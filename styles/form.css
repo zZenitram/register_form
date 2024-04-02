@@ -16,23 +16,23 @@ div#container-text p {
     opacity: 0.6;
 }
 
-form#form-register-user {
+form#form-register-user ul {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
 
-form#form-register-user label {
+form#form-register-user ul li {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
 }
 
-form#form-register-user label>input {
+form#form-register-user ul li>input {
     width: 100%;
 }
 
-form#form-register-user label>span {
+form#form-register-user ul li>span {
     width: 100%;
     font-weight: 600;
     font-size: 0.9rem;
@@ -51,7 +51,7 @@ div#container-condition-term label {
     column-gap: 10px;
 }
 
-div#container-condition-term label strong{
+div#container-condition-term label strong {
     font-size: 0.8rem;
 }
 
@@ -73,14 +73,58 @@ button#button-register {
     background-color: #222222;
 }
 
-div.group-input {
+div.term-text {
+    display: flex;
+    column-gap: 5px;
+    font-size: 0.9rem;
+}
+
+label.group-input {
     position: relative;
 }
 
-div.group-input i {
+label.group-input i {
     position: absolute;
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
     font-size: 1.2rem;
+}
+
+label.group-checklist {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label.group-checklist input {
+    display: none;
+}
+
+label.group-checklist input:checked {
+    background-color: #222222;
+}
+
+label.group-checklist input:checked~i {
+    opacity: 1;
+}
+
+label.group-checklist i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #222222;
+    opacity: 0;
+    transition: opacity 0.1s ease;
 }
