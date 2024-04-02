@@ -28,58 +28,58 @@
             </div>
 
             <form id="form-register-user">
-
-                <label for="data-name">
-                    <span>Nome Completo:</span>
-                    <div class="group-input">
-                        <input type="text" class="input" id="data-name" placeholder="Ex: João da Silva">
-                        <i class='bx bxs-user'></i>
-                    </div>
-                </label>
-
-                <label for="data-email">
-                    <span>E-mail:</span>
-                    <div class="group-input">
-                        <input type="email" class="input" id="data-email" placeholder="Ex: joao@gmail.com">
-                        <i class='bx bxs-envelope'></i>
-                    </div>
-                </label>
-
-                <label for="data-cell-phone">
-                    <span>Celular:</span>
-                    <div class="group-input">
-                        <input type="text" class="input" id="data-cell-phone" placeholder="(00) 90000-0000">
-                        <i class='bx bxs-phone'></i>
-                    </div>
-                </label>
-
-                <label for="data-gender">
-                    <span>Gênero:</span>
-                    <div class="group-input">
-                        <select class="select" id="data-gender">
-                            <option value="" selected>Selecione um opção</option>
-                            <option value="MASCULINO">Masculino</option>
-                            <option value="FEMININO">Feminino</option>
-                        </select>
-                        <i class='bx bxs-chevron-down'></i>
-                    </div>
-                </label>
-
-                <label for="data-date-of-birth">
-                    <span>Data de Nascimento:</span>
-                    <div class="group-input">
-                        <input type="date" class="input" id="data-date-of-birth">
-                        <i class='bx bxs-calendar'></i>
-                    </div>
-                </label>
+                <ul class="unordered list">
+                    <li class="item">
+                        <span>Nome Completo:</span>
+                        <label class="group-input" for="data-name">
+                            <input type="text" class="input" id="data-name" placeholder="Ex: João da Silva">
+                            <i class='bx bxs-user'></i>
+                        </label>
+                    </li>
+                    <li class="item">
+                        <span>E-mail:</span>
+                        <label class="group-input" for="data-email">
+                            <input type="email" class="input" id="data-email" placeholder="Ex: joao@gmail.com">
+                            <i class='bx bxs-envelope'></i>
+                        </label>
+                    </li>
+                    <li class="item">
+                        <span>Celular:</span>
+                        <label class="group-input" for="data-cell-phone">
+                            <input type="text" class="input" id="data-cell-phone" placeholder="(00) 90000-0000">
+                            <i class='bx bxs-phone'></i>
+                        </label>
+                    </li>
+                    <li class="item">
+                        <span>Gênero:</span>
+                        <label class="group-input" for="data-gender">
+                            <select class="select" id="data-gender">
+                                <option value="" selected>Selecione um opção</option>
+                                <option value="MASCULINO">Masculino</option>
+                                <option value="FEMININO">Feminino</option>
+                            </select>
+                            <i class='bx bxs-chevron-down'></i>
+                        </label>
+                    </li>
+                    <li class="item">
+                        <span>Data de Nascimento:</span>
+                        <label class="group-input" for="data-date-of-birth">
+                            <input type="date" class="input" id="data-date-of-birth">
+                            <i class='bx bxs-calendar'></i>
+                        </label>
+                    </li>
+                </ul>
             </form>
 
             <div id="container-condition-term">
-                
-                <label for="data-term">
-                    <input type="checkbox" id="data-term">
+
+                <div class="term-text">
+                    <label class="group-checklist" for="data-term">
+                        <input type="checkbox" id="data-term">
+                        <i class='bx bx-check'></i>
+                    </label>
                     <strong>Termos e Condições:</strong>
-                </label>
+                </div>
 
                 <p class="paragraph-condition-term">
                     Ao preencher este formulário, declaro que as informações fornecidas são precisas e verdadeiras.
